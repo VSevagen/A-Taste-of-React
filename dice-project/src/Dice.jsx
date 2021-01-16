@@ -53,7 +53,7 @@ class Dice extends React.Component {
                 <Icon className={`fas fa-dice-${this.state.num1}`}></Icon>
                 <Icon className={`fas fa-dice-${this.state.num2}`}></Icon>
                 <div>
-                    <Button onClick={this.handleclick}>
+                    <Button onClick={this.handleclick} disabled={this.state.isToggle ? true: false}>
                         {this.state.isToggle ? "Rolling...": "Roll Dice ! "}
                     </Button>
                 </div>
