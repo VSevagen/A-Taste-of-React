@@ -96,7 +96,7 @@ class Hangman extends Component {
           <p className="Hangman-btns">{this.generateButtons()}</p>
         )}
 
-        <button onClick={this.handleClick} class="Hangman-reset">
+        <button onClick={this.handleClick} id="reset">
           Reset
         </button>
       </div>
